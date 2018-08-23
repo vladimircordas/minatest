@@ -62,8 +62,8 @@
     .open>.btn.bmd-btn-fab.btn-primary.dropdown-toggle,
     .open>.btn.btn-raised.btn-primary.dropdown-toggle {
         color: #fff;
-        background-color: #107dac;
-        border-color: #005073;
+        background-color: #107dac!important;
+        border-color: #005073!important;
     }
     
     .bmd-form-group .custom-file-control,
@@ -245,7 +245,7 @@
     .dropdown-item:hover {
         color: white;
         text-decoration: none;
-        background-color: #008276;
+        background-color: #107dac;
     }
     
     .material-icons::after {
@@ -370,12 +370,12 @@
         z-index: -1;
         border: 1px solid #107dac;
         transition: all .3s ease;
-        max-height: 30px;
-        max-width: 0px;
-        top: 0px;
+        max-height: 10px;
+        max-width: 10px;
+        top: 10px;
         bottom: 0px;
         left: 120px;
-        right: 0;
+        right: 10px;
     }
     
     li:hover span::before,
@@ -562,11 +562,27 @@
     .btn-white:focus,
     .btn-white:active,
     .btn-white:active:focus {
-        color: #008276;
+        color: #107dac;
+    }
+    
+    .custom-file-control.is-focused [class*=" bmd-label"],
+    .custom-file-control .is-focused [class*=" bmd-label"],
+    .custom-file-control.is-focused [class^=bmd-label],
+    .custom-file-control .is-focused [class^=bmd-label],
+    .is-focused [class^=bmd-label],
+    .is-focused [class*=" bmd-label"] {
+        color: #107dac
     }
     
     .phone {
         margin-top: 30px;
+    }
+    
+    .custom-file-control,
+    .form-control,
+    .is-focused .custom-file-control,
+    .is-focused .form-control {
+        background-image: linear-gradient(0deg, #107dac 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0);
     }
     /* ================================
     CENOVNIK
