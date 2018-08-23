@@ -14,6 +14,58 @@
         margin-top: .3125rem;
     }
     
+    .bmd-btn-fab.btn-primary.custom-file-control:before,
+    .btn-group-raised .btn-primary.custom-file-control:before,
+    .btn-group-raised .btn.btn-primary,
+    .btn-raised.btn-primary.custom-file-control:before,
+    .btn.bmd-btn-fab.btn-primary,
+    .btn.btn-raised.btn-primary {
+        color: #fff;
+        background-color: #189ad3;
+        border-color: #189ad3;
+    }
+    
+    .bmd-btn-fab.btn-primary.active.custom-file-control:before,
+    .bmd-btn-fab.btn-primary.custom-file-control:active:before,
+    .bmd-btn-fab.btn-primary.custom-file-control:focus:before,
+    .bmd-btn-fab.btn-primary.custom-file-control:hover:before,
+    .bmd-btn-fab.btn-primary.focus.custom-file-control:before,
+    .btn-group-raised .btn-primary.active.custom-file-control:before,
+    .btn-group-raised .btn-primary.custom-file-control:active:before,
+    .btn-group-raised .btn-primary.custom-file-control:focus:before,
+    .btn-group-raised .btn-primary.custom-file-control:hover:before,
+    .btn-group-raised .btn-primary.focus.custom-file-control:before,
+    .btn-group-raised .btn.btn-primary.active,
+    .btn-group-raised .btn.btn-primary.focus,
+    .btn-group-raised .btn.btn-primary:active,
+    .btn-group-raised .btn.btn-primary:focus,
+    .btn-group-raised .btn.btn-primary:hover,
+    .btn-raised.btn-primary.active.custom-file-control:before,
+    .btn-raised.btn-primary.custom-file-control:active:before,
+    .btn-raised.btn-primary.custom-file-control:focus:before,
+    .btn-raised.btn-primary.custom-file-control:hover:before,
+    .btn-raised.btn-primary.focus.custom-file-control:before,
+    .btn.bmd-btn-fab.btn-primary.active,
+    .btn.bmd-btn-fab.btn-primary.focus,
+    .btn.bmd-btn-fab.btn-primary:active,
+    .btn.bmd-btn-fab.btn-primary:focus,
+    .btn.bmd-btn-fab.btn-primary:hover,
+    .btn.btn-raised.btn-primary.active,
+    .btn.btn-raised.btn-primary.focus,
+    .btn.btn-raised.btn-primary:active,
+    .btn.btn-raised.btn-primary:focus,
+    .btn.btn-raised.btn-primary:hover,
+    .open>.bmd-btn-fab.btn-primary.dropdown-toggle.custom-file-control:before,
+    .open>.btn-group-raised .btn-primary.dropdown-toggle.custom-file-control:before,
+    .open>.btn-group-raised .btn.btn-primary.dropdown-toggle,
+    .open>.btn-raised.btn-primary.dropdown-toggle.custom-file-control:before,
+    .open>.btn.bmd-btn-fab.btn-primary.dropdown-toggle,
+    .open>.btn.btn-raised.btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: #107dac;
+        border-color: #005073;
+    }
+    
     .bmd-form-group .custom-file-control,
     .bmd-form-group .form-control,
     .bmd-form-group input::placeholder,
@@ -176,11 +228,11 @@
     .show .dropdown-toggle.btn-success,
     .show .dropdown-toggle.btn-warning,
     .show .dropdown-toggle.custom-file-control:before {
-        background: #009688;
+        background: #189ad3;
     }
     
     .navbar-expand-lg .navbar-nav .dropdown-menu {
-        background: #009688;
+        background: #189ad3;
         padding: 0;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
     }
@@ -292,13 +344,13 @@
         vertical-align: middle;
         opacity: 0;
         transition: all .5s ease;
-        color: #009688;
+        color: #189ad3;
         max-height: 30px;
     }
     
     aside ul li span a,
     aside ul li span a:hover {
-        color: #009688;
+        color: #189ad3;
         text-decoration: none;
         max-height: 30px;
     }
@@ -316,7 +368,7 @@
         background-color: white;
         position: absolute;
         z-index: -1;
-        border: 1px solid #005951;
+        border: 1px solid #107dac;
         transition: all .3s ease;
         max-height: 30px;
         max-width: 0px;
@@ -335,7 +387,7 @@
         background-color: white;
         position: absolute;
         z-index: -1;
-        border: 1px solid #005951;
+        border: 1px solid #107dac;
         transition: all .3s ease;
         max-height: 30px;
         max-width: 130px;
@@ -374,8 +426,8 @@
         width: 30px;
         min-width: 30px;
         height: 30px;
-        border-color: #005951;
-        background-color: #008276;
+        border-color: #005073;
+        background-color: #107dac;
     }
     
     li.is-active+li .nav-link.btn.bmd-btn-fab-sm.sidenav {
@@ -477,7 +529,7 @@
         right: -220px;
         width: 720px;
         height: 200vh;
-        background-color: #009688;
+        background-color: #189ad3;
     }
     
     #msgr-wrapper .msgr-content {
@@ -500,7 +552,7 @@
     
     .btn-white {
         background: white!important;
-        color: #009688;
+        color: #189ad3;
         display: flex;
         align-items: center;
         justify-content: center;
