@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
-
+    <script src="js/vendor/inView.js"></script>
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -88,7 +88,47 @@
 
         </div>
     </section>
+    <div class="contact-us">
 
+        <a class="nav-link btn bmd-btn-fab btn-primary" id="messages" data-target="messenger">
+            <div class="wrapper"><i class="fa fa-comment"></i><i class="fa fa-comment"></i></div>
+        </a>
+
+    </div>
+    <div id="msgr">
+        <div id="msgr-wrapper">
+            <div class="msgr-content">
+                <a href="#" class="nav-link btn bmd-btn-fab bmd-btn-fab-sm btn-white messenger-close icon icon-hover icon-xs icon-circle icon-white" data-target="messenger"><i class="fa fa-times"></i></a>
+                <h3 class="card-title">Kontaktirajte nas putem kontakt forme:</h3>
+                <div class="card content-descript">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name" class="bmd-label-floating">Ime i prezime</label>
+                                <input type="name" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="bmd-label-floating">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="poruka" class="bmd-label-floating">Tekst poruke...</label>
+                                <textarea type="poruka" class="form-control" id="poruka"></textarea>
+                            </div>
+                            <div class="form-group bmd-form-group">
+                                <button type="submit" class="btn btn-raised btn-primary">Posalji</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="phone">
+                    <h3 class="card-title">Ili putem telefona:</h3>
+                    <h3 class="card-title phone"><i class="fas fa-phone"></i>+381XXXXXXXX</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">

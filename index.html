@@ -67,24 +67,25 @@
                     <li class="nav-item">
                         <a class="nav-link btn btn-raised btn-primary" href="cenovnik.html">Cenovnik</a>
                     </li>
-                    <!--            <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link btn btn-raised btn-primary" href="kontakt.html">Kontakt</a>
-                    </li>   -->
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <section id="main" class="jumbotron">
+    <section id="main">
         <div class="container">
+
             <div class="card content-descript">
                 <div class="card-body">
                     <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-            </div>
 
+            </div>
         </div>
     </section>
     <hr>
@@ -94,7 +95,7 @@
             <h2>Tretmani koje nudimo:</h2>
             <!-- Example row of columns -->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="card content-descript">
                         <div class="card-body">
                             <img src="./img/spine-massage.jpg" />
@@ -104,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="card content-descript">
                         <div class="card-body">
                             <img src="./img/ankle-massage.jpg" />
@@ -114,9 +115,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
+
+                <div class="col-md-12 col-lg-6">
                     <div class="card content-descript">
                         <div class="card-body">
                             <img src="./img/corrective.jpg" />
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="card content-descript">
                         <div class="card-body">
                             <img src="./img/massage-drainage-lymphatique.jpg" />
@@ -141,7 +141,11 @@
 
 
     <div class="contact-us">
-        <a class="nav-link btn bmd-btn-fab btn-primary" id="messages" data-target="messenger"><i class="fa fa-comment"></i></a>
+
+        <a class="nav-link btn bmd-btn-fab btn-primary" id="messages" data-target="messenger">
+            <div class="wrapper"><i class="fa fa-comment"></i><i class="fa fa-comment"></i></div>
+        </a>
+
     </div>
     <div id="msgr">
         <div id="msgr-wrapper">
@@ -163,9 +167,9 @@
                                 <label for="poruka" class="bmd-label-floating">Tekst poruke...</label>
                                 <textarea type="poruka" class="form-control" id="poruka"></textarea>
                             </div>
-                            <span class="form-group bmd-form-group">
-                                    <button type="submit" class="btn btn-raised btn-primary">Posalji</button>
-                                  </span>
+                            <div class="form-group bmd-form-group">
+                                <button type="submit" class="btn btn-raised btn-primary">Posalji</button>
+                            </div>
                         </form>
                     </div>
 

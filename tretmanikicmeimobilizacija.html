@@ -91,9 +91,9 @@
                     <li class="nav-item">
                         <a class="nav-link btn btn-raised btn-primary" href="cenovnik.html">Cenovnik</a>
                     </li>
-                    <!--        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link btn btn-raised btn-primary" href="kontakt.html">Kontakt</a>
-                    </li>       -->
+                    </li>
                 </ul>
             </div>
         </div>
@@ -165,7 +165,11 @@
         </div>
     </section>
     <div class="contact-us">
-        <a class="nav-link btn bmd-btn-fab btn-primary" id="messages" data-target="messenger"><i class="fa fa-comment"></i></a>
+
+        <a class="nav-link btn bmd-btn-fab btn-primary" id="messages" data-target="messenger">
+            <div class="wrapper"><i class="fa fa-comment"></i><i class="fa fa-comment"></i></div>
+        </a>
+
     </div>
     <div id="msgr">
         <div id="msgr-wrapper">
@@ -187,9 +191,9 @@
                                 <label for="poruka" class="bmd-label-floating">Tekst poruke...</label>
                                 <textarea type="poruka" class="form-control" id="poruka"></textarea>
                             </div>
-                            <span class="form-group bmd-form-group">
-                                        <button type="submit" class="btn btn-raised btn-primary">Posalji</button>
-                                      </span>
+                            <div class="form-group bmd-form-group">
+                                <button type="submit" class="btn btn-raised btn-primary">Posalji</button>
+                            </div>
                         </form>
                     </div>
 
