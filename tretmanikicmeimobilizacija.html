@@ -17,17 +17,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
     <!-- Material Design for Bootstrap CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
     <script src="js/vendor/inView.js"></script>
@@ -55,115 +56,153 @@
                 <span><a href="#tretman3">Tretman 3</a></span>
                 <a href="#tretman3" class="nav-link btn bmd-btn-fab bmd-btn-fab-sm btn-primary sidenav"></a>
             </li>
-            <li class="tretman" id="tretman4thumb">
-                <span><a href="#tretman4">Tretman 4</a></span>
-                <a href="#tretman4" class="nav-link btn bmd-btn-fab bmd-btn-fab-sm btn-primary sidenav"></a>
-            </li>
-            <li class="tretman" id="tretman5thumb">
-                <span><a href="#tretman5">Tretman 5</a></span>
-                <a href="#tretman5" class="nav-link btn bmd-btn-fab bmd-btn-fab-sm btn-primary sidenav"></a>
-            </li>
         </ul>
     </aside>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link btn btn-raised btn-primary" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <ul class="nav nav-tabs ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn btn-raised btn-primary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tretmani kicme i zglobova</a>
+                        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tretmani kicme i zglobova</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman1">Tretmani kicme</a>
-                            <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman4">Bezbolne manuelne mobilizacije</a>
-                            <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman5">Terapeutske i korektivne vežbe</a>
+                            <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman2">Bezbolne manuelne mobilizacije</a>
+                            <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman3">Terapeutske i korektivne vežbe</a>
                         </div>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link btn btn-raised btn-primary" href="limfnadrenaza.html">Limfna drenaža</a>
+                        <a class="nav-link" href="limfnadrenaza.html">Limfna drenaža</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-raised btn-primary" href="cenovnik.html">Cenovnik</a>
+                        <a class="nav-link" href="cenovnik.html">Cenovnik</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-raised btn-primary" href="kontakt.html">Kontakt</a>
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <section class="descript-type" id="tretman1">
-        <div class="container">
-            <div class="card content-descript">
-                <div class="card-body">
-                    <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-raised btn-primary">Go somewhere</a>
+    <main id="tretmani">
+        <section class="descript-type" id="tretman1">
+            <div class="container">
+                <div class="card content-descript">
+                    <div class="card-body">
+                        <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-raised btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-    </section>
-    <hr>
-    <section class="descript-type" id="tretman2">
-        <div class="container">
-            <div class="card content-descript">
-                <div class="card-body">
-                    <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-raised btn-primary">Go somewhere</a>
+            </div>
+        </section>
+        <hr>
+        <section class="descript-type" id="tretman2">
+            <div class="container">
+                <div class="card content-descript">
+                    <div class="card-body">
+                        <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-raised btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-    </section>
-    <hr>
-    <section class="descript-type" id="tretman3">
-        <div class="container">
-            <div class="card content-descript">
-                <div class="card-body">
-                    <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-raised btn-primary">Go somewhere</a>
+            </div>
+        </section>
+        <hr>
+        <section class="descript-type" id="tretman3">
+            <div class="container">
+                <div class="card content-descript">
+                    <div class="card-body">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">Šta je kineziterapija, tj. terapeutske vežbe?</h1>
+                                <p class="card-text">Kineziterapija podrazumeva terapiju pokretom, odnosno vežbama. Ovo je terapijska metoda kojom se ciljano aktiviraju mišići koji su usled određenog stanja, povrede, neaktivnosti ili nepravilnog držanja vremenom oslabili.</p>
+                                <p class="card-text">Ove vežbe su osmišljene tako da budu jednostavne za izvođenje, da ne izazivaju i ne pojačavaju već postojeći bol.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">Zašto su nam ove vežbe važne?</h1>
+                                <p class="card-text">Često je slabost određene grupe mišića praćena bolom u zglobovima ili leđima i nemogućnošću izvođenja pojedinih pokreta, delimično ili u potpunosti, što nas ograničava u svakodnevnim aktivnostima. Takođe, slabost mišića
+                                    je često razlog zbog kog, prilikom aktivnosti koje ne smatramo teškim i napornim, dolazi do povreda zglobova, mišića, ligamenata i drugih struktura.</p>
+                                <p class="card-text">Kao posledica slabosti leđne muskulature se mogu javiti simptomi poput bola u leđima i vratu, trnjenja delova ekstremiteta ili ograničene pokretljivosti segmenata kičme.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">Šta se postiže primenom kineziterapije?</h1>
+                                <p class="card-text">Primenom terapeutskih i korektivnih vežbi ciljano jačamo oslabljene mišiće i time rasterećujemo segmente koji su ugroženi.</p>
+                                <p class="card-text">Izuzetno je važno da vežbe budu individualno prilagođene i da se rade pravilno.</p>
+                                <p class="card-text">Da bismo bili sigurni da radimo vežbe koje treba i kako treba - možemo se obratiti fizioterapeutu. Fizioterapeut će nas, na osnovu detaljne procene stanja, obučiti koje vežbe i kako da radimo, koliko ponavljanja i koliko
+                                    često. Takođe, može nam reći i šta to u našim svakodnevnim aktivnostima može povećati rizik za nastanak povrede ili pogoršanje stanja, kao i kako to da promenimo.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">Na šta sve možemo pozitivno uticati redovnim vežbanjem?</h1>
+                                <ul class="card-text">
+                                    <li>Prevencija povreda i bolnih sindroma</li>
+                                    <li>Deformiteti kičmenog stuba</li>
+                                    <li>Poremećaji okoštavanja</li>
+                                    <li>Povreda mekih tkiva (nagnječenja, istezanja, kidanja mišića, tetiva ili ligamenata)</li>
+                                    <li>Reumatska oboljenja</li>
+                                    <li>Kontrakture na ekstremitetima</li>
+                                    <li>Nakon operativnih zahvata na kostima, mišićima ili zglobovima</li>
+                                    <li>Prelomi kostiju ekstremiteta</li>
+                                    <li>Preoperativna priprema</li>
+                                    <li>Jačanje mišića pre i nakon porođaja</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">Da li postoje stanja zbog kojih ne bismo smeli da vežbamo?</h1>
+                                <p class="card-text">Kontraindikacije za terapeutske vežbe praktično ne postoje. Postoje stanja koja morate prijaviti svom fizioterapeutu kako bi prilagodio program vežbi prema vašim mogućnostima i trenutnom stanju.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">Šta je to što morate reći fizioterapeutu pre početka vežbanja?</h1>
+                                <ul class="card-text">
+                                    <li>Sračana oboljenja (srčana insuficijencija ili srčana dekompenzacija)</li>
+                                    <li>Visoka telesna temperatura</li>
+                                    <li>Jako izraženi bolovi</li>
+                                    <li>Zapaljenja zglobova</li>
+                                    <li>Opasnost od krvarenja</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">Da li ove vežbe moramo uvek da radimo sa svojim fizioterapeutom?</h1>
+                                <p class="card-text">Zadatak fizioterapeuta je da nas nauči koje su to vežbe koje su baš nama potrebne, kako da ih pravilno radimo i koliko često. Takođe, važan zadatak fizioterapeuta je da nas nauči kako da vežbe radimo samostalno i kako sami
+                                    sebe da kontrolišemo da li ih radimo pravilno.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
-            </div>
-
-        </div>
-    </section>
-    <hr>
-    <section class="descript-type" id="tretman4">
-        <div class="container">
-            <div class="card content-descript">
-                <div class="card-body">
-                    <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-raised btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <hr>
-    <section class="descript-type" id="tretman5">
-        <div class="container">
-            <div class="card content-descript">
-                <div class="card-body">
-                    <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-raised btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
+        </section>
+    </main>
     <div class="contact-us">
 
         <a class="nav-link btn bmd-btn-fab btn-primary" id="messages" data-target="messenger">

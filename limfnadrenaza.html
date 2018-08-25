@@ -17,18 +17,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
     <!-- Material Design for Bootstrap CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -44,55 +44,159 @@
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link btn btn-raised btn-primary" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <ul class="nav nav-tabs ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn btn-raised btn-primary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tretmani kicme i zglobova</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tretmani kicme i zglobova</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman1">Tretmani kicme</a>
-                            <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman4">Bezbolne manuelne mobilizacije</a>
-                            <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman5">Terapeutske i korektivne vežbe</a>
+                            <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman2">Bezbolne manuelne mobilizacije</a>
+                            <a class="dropdown-item" href="tretmanikicmeimobilizacija.html#tretman3">Terapeutske i korektivne vežbe</a>
                         </div>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link btn btn-raised btn-primary" href="limfnadrenaza.html">Limfna drenaža</a>
+                        <a class="nav-link active" href="limfnadrenaza.html">Limfna drenaža</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-raised btn-primary" href="cenovnik.html">Cenovnik</a>
+                        <a class="nav-link" href="cenovnik.html">Cenovnik</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-raised btn-primary" href="kontakt.html">Kontakt</a>
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <section class="descript-type" id="lim-dren">
         <div class="container">
             <div class="card content-descript">
                 <div class="card-body">
-                    <h1 class="card-title">Dobrodosli na stranicu "nesto"</h1>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-raised btn-primary">Go somewhere</a>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <h1 class="card-title">Šta je manuelna limfna drenaža?</h1>
+                                <p class="card-text">Predstavlja specifičnu vrstu masaže, periodično i lagano potiskivanje tkiva kojim se stimuliše kretanje limfe u cilju smanjivanja i sprečavanja limfnog zastoja.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <h1 class="card-title">Šta se postiže limfnom drenažom?</h1>
+                                <p class="card-text">Limfnom drenažom postižu se sledeći efekti:</p>
+                                <ul class="card-text margin-bottom">
+                                    <li>Detoksikacija organizma</li>
+                                    <li>Poboljšanje cirkulacije</li>
+                                    <li>Prevencija i ublažavanje otoka kod „umornih i teških nogu“</li>
+                                    <li>Smanjenje obima nogu, zadnjice i stomaka</li>
+                                    <li>Bolja ishrana i regeneracija tkiva</li>
+                                    <li>Prevencija pojave i otklanjanje celulita</li>
+                                    <li>Koža postaje čvršća i zategnutija</li>
+                                    <li>Poboljšanje ukupnog imunološkog stanja organizma</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p class="card-text">Rezultati su vidljivi odmah nakon tretmana.</p>
+                                <p class="card-text">Limfnom drenažom postiže se ravnoteža tečnosti u organizmu i stimuliše opšte bolje stanje organizma.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <h1 class="card-title">Kada se koristi limfna drenaža?</h1>
+                                <p class="card-text">Manuelna limfna drenaža se primenjuje u terapiji raznih stanja, naročito otoka, ali i u estetske svrhe pošto utiče na bolji izgled kože. Izuzetno je delotvorna kod uklanjanja celulita i mršavljenja jer eliminacijom tečnosti
+                                    iz vezivnog tkiva utičemo na bolju opskrbljenost ćelija hranljivim materijama a istovremeno eliminišemo toksine iz organizma.</p>
+                                <p class="card-text">U zavisnosti od stanja organizma i tipa problema, tokom serije tretmana limfne drenaže, preporučuju se određene korekcije ishrane i aktivnosti koje podrazumevaju smanjenje unosa soli, šećera i alkohola, povećanje unosa
+                                    vode, kao i smanjenje ili povećanje fizičke aktivnosti.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <h1 class="card-title">Kada se limfna drenaža ne preporučuje?</h1>
+                                <p class="card-text">Ukoliko imate neko od ovih stanja, morate obavestiti svog terapeuta o tome:</p>
+                                <ul class="card-text">
+                                    <li>Upalni procesi</li>
+                                    <li>Tumorski procesi</li>
+                                    <li>Upala jajnika</li>
+                                    <li>Bolesti srca</li>
+                                    <li>Povišena temperatura</li>
+                                    <li>Ubrzana sedimentacija krvi</li>
+                                    <li>Venska tromboza</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <h1 class="card-title">Trajanje pojedinačnih tretmana:</h1>
+
+                                <table class="card-text">
+                                    <tr>
+                                        <th>Tretman</th>
+                                        <th>Trajanje Tretmana</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Celo telo</td>
+                                        <td>2 sata</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Parcijalni tretman donjeg dela tela</td>
+                                        <td>1 sat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Parcijalni tretman stomaka i leđa</td>
+                                        <td>45 minuta</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <h1 class="card-title">Broj potrebnih tretmana:</h1>
+                                <h3 class="card-title">*Kada se započne serija radi se svaki ili svaki drugi dan, u kontinuitetu*</h3>
+                                <p class="card-text">Tretman otoka i problema izazvanih usporenom cirkulacijom:</p>
+                                <ul class="card-text">
+                                    <li>Između 3 i 6 tretmana u seriji</li>
+                                    <li>Serija se može ponoviti prema potrebi i stanju organizma</li>
+                                </ul>
+                                <p class="card-text">Tretman podsticanja imunog sistema i detoksikacije organizma:</p>
+                                <ul class="card-text">
+                                    <li>2-3 tretmana u seriji</li>
+                                    <li>1 serija na razmaku od mesec dana</li>
+                                </ul>
+                                <p class="card-text">Tretman celulita:</p>
+                                <ul class="card-text">
+                                    <li>Varira u zavisnosti od stanja</li>
+                                    <li>Između 6 i 10 tretmana u seriji</li>
+                                    <li>Ne više od 2 serije</li>
+                                    <li>Nakon završene 1 ili 2 serije, u zavisnosti od tipa problema, održavanje se radi kao 1 tretman u 2 nedelje ili 1 tretman u mesec dana</li>
+                                </ul>
+                                <h3 class="card-title">Za više informacija o ovoj vrsti tretmana možete se informisati na sledećem linku:</h3>
+                                <a href="https://cfcld.wordpress.com/o-cfc-u-za-klijente/">O CFC-u za klijente</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
     <div class="contact-us">
-
         <a class="nav-link btn bmd-btn-fab btn-primary" id="messages" data-target="messenger">
             <div class="wrapper"><i class="fa fa-comment"></i><i class="fa fa-comment"></i></div>
         </a>
-
     </div>
     <div id="msgr">
         <div id="msgr-wrapper">
@@ -119,7 +223,6 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
                 <div class="phone">
                     <h3 class="card-title">Ili putem telefona:</h3>
@@ -128,7 +231,6 @@
             </div>
         </div>
     </div>
-
     <footer>
         <div class="container">
             <ul>
