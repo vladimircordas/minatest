@@ -183,7 +183,7 @@ hr {
 }
 
 .nav-tabs .nav-link:hover::before {
-    border-bottom-width: 66px;
+    border-bottom-width: 64px;
     width: 100%;
     left: 0;
 }
