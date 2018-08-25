@@ -749,10 +749,26 @@ CENOVNIK
         min-width: 100%;
         max-height: 100%;
     }
+    ul.nav {
+        text-align: center;
+    }
+    .navbar {
+        padding: 5px;
+    }
+    .nav .nav-item {
+        width: 100%;
+    }
     .navbar-nav li {
         margin-left: 0;
     }
     aside {
         display: none;
+    }
+    .dropdown-menu {
+        right: 0;
+    }
+    .dropdown-menu .dropdown-item {
+        justify-content: center;
+        max-width: 100%;
     }
 }
