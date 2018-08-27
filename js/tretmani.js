@@ -6,7 +6,7 @@ $(document).ready(function() {
     var tretman2thumb = $('#tretman2thumb');
     var tretman3 = $('#tretman3');
     var tretman3thumb = $('#tretman3thumb');
-    inView.threshold(0.4);
+    inView.threshold(0.40);
 
     inView('#tretman1')
         .on('enter', el => {
