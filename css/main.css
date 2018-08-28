@@ -133,6 +133,32 @@ hr {
     padding: 0;
 }
 
+.navbar .navbar-brand:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: -130px;
+    width: 0;
+    height: 0;
+    border-bottom: 61px solid #189ad3;
+    border-right: 130px solid transparent;
+    z-index: -1;
+}
+
+.navbar .navbar-brand:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -130px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 61px solid #189ad3;
+    border-left: 130px solid transparent;
+    z-index: -1;
+}
+
 .navbar-brand img {
     max-height: 61px;
 }
@@ -463,7 +489,6 @@ a:hover .wrapper:after {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 50px 0;
 }
 
 .descript-type .container {
@@ -803,6 +828,12 @@ CENOVNIK
     align-content: space-around;
 }
 
+#cenovnik.descript-type .container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
 .owl-theme .owl-dots,
 .owl-theme .owl-nav {
     text-align: center;
@@ -870,10 +901,14 @@ CENOVNIK
     }
     #descriptions,
     #cenovnik,
-    #kontakt {
+    #kontakt,
+    #tretmani {
         padding-bottom: 15px;
     }
-    #descriptions {
+    #descriptions,
+    #cenovnik,
+    #tretmani,
+    #kontakt {
         padding-top: 50px;
     }
     .card-body img {
@@ -895,23 +930,17 @@ CENOVNIK
         content: "";
         position: absolute;
         top: 0;
-        left: auto;
-        right: -100px;
+        left: 0;
+        right: 0;
         width: 0;
         height: 0;
-        border-top: 61px solid #189ad3;
-        border-right: 100px solid transparent;
+        border-top: 140px solid #189ad3;
+        border-right: 250px solid transparent;
+        border-left: none;
+        z-index: -1;
     }
     .navbar .navbar-brand:after {
-        content: "";
-        position: absolute;
-        top: 61px;
-        left: 0;
-        right: auto;
-        width: 0;
-        height: 0;
-        border-top: 92px solid #189ad3;
-        border-right: 142px solid transparent;
+        display: none;
     }
     .navbar-collapse {
         margin: 0 -15px;
