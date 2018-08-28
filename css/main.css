@@ -4,7 +4,7 @@ Author's custom styles
 
 body {
     font-family: roboto;
-    padding: 61px 0 81px 0;
+    padding: 63px 0 81px 0;
     min-height: 100vh;
     position: relative;
 }
@@ -141,7 +141,7 @@ hr {
     right: -130px;
     width: 0;
     height: 0;
-    border-bottom: 61px solid #189ad3;
+    border-bottom: 64px solid #189ad3;
     border-right: 130px solid transparent;
     z-index: -1;
 }
@@ -154,13 +154,13 @@ hr {
     right: 0;
     width: 0;
     height: 0;
-    border-top: 61px solid #189ad3;
+    border-top: 64px solid #189ad3;
     border-left: 130px solid transparent;
     z-index: -1;
 }
 
 .navbar-brand img {
-    max-height: 61px;
+    max-height: 64px;
 }
 
 .navbar-nav li {
@@ -180,6 +180,10 @@ hr {
     color: white;
 }
 
+.nav-tabs .nav-link {
+    border-bottom: 3px solid transparent;
+}
+
 .nav-tabs .nav-link,
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
@@ -189,8 +193,9 @@ hr {
     border-top-right-radius: 0;
 }
 
-.nav-tabs {
-    margin-bottom: -2px;
+.nav-tabs,
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
 }
 
 .nav-tabs .nav-link.active {
@@ -473,14 +478,12 @@ a:hover .wrapper:after {
 
 #tretman1>.container>.card.content-descript,
 #tretman2>.container>.card.content-descript,
-#tretman3>.container>.card.content-descript,
 #lim-dren>.container>.card.content-descript {
     background: transparent;
 }
 
 #tretman1>.container>.card.content-descript>.card-body,
 #tretman2>.container>.card.content-descript>.card-body,
-#tretman3>.container>.card.content-descript>.card-body,
 #lim-dren>.container>.card.content-descript>.card-body {
     background: rgba(255, 255, 255, 0.5);
 }
@@ -902,14 +905,26 @@ CENOVNIK
     #descriptions,
     #cenovnik,
     #kontakt,
+    #tretman1,
+    #tretman2,
     #tretmani {
         padding-bottom: 15px;
     }
+    #tretman1,
+    #tretman2 {
+        padding-top: 50px;
+    }
+    #tretman1 {
+        padding-top: 15px;
+    }
     #descriptions,
     #cenovnik,
-    #tretmani,
-    #kontakt {
+    #tretmani {
         padding-top: 50px;
+    }
+    #lim-dren,
+    #kontakt {
+        padding-top: 65px;
     }
     .card-body img {
         min-width: 100%;
@@ -935,7 +950,7 @@ CENOVNIK
         width: 0;
         height: 0;
         border-top: 140px solid #189ad3;
-        border-right: 250px solid transparent;
+        border-right: 260px solid transparent;
         border-left: none;
         z-index: -1;
     }
@@ -1045,13 +1060,11 @@ CENOVNIK
  */
     #tretman1>.container>.card.content-descript,
     #tretman2>.container>.card.content-descript,
-    #tretman3>.container>.card.content-descript,
     #lim-dren>.container>.card.content-descript {
         background: transparent;
     }
     #tretman1>.container>.card.content-descript>.card-body,
     #tretman2>.container>.card.content-descript>.card-body,
-    #tretman3>.container>.card.content-descript>.card-body,
     #lim-dren>.container>.card.content-descript>.card-body {
         background: rgba(255, 255, 255, 0.5);
         padding: 5px;
