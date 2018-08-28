@@ -882,13 +882,39 @@ CENOVNIK
     }
     ul.nav {
         text-align: center;
-        margin-top: 15px;
+        margin-top: 30px;
     }
     .navbar {
         padding: 15px;
     }
     .navbar .navbar-brand {
         margin: -15px;
+        position: relative;
+    }
+    .navbar .navbar-brand:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: -100px;
+        width: 0;
+        height: 0;
+        border-top: 61px solid #189ad3;
+        border-right: 100px solid transparent;
+    }
+    .navbar .navbar-brand:after {
+        content: "";
+        position: absolute;
+        top: 61px;
+        left: 0;
+        right: auto;
+        width: 0;
+        height: 0;
+        border-top: 92px solid #189ad3;
+        border-right: 142px solid transparent;
+    }
+    .navbar-collapse {
+        margin: 0 -15px;
     }
     .nav .nav-item {
         width: 100%;
