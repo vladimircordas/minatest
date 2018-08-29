@@ -113,14 +113,15 @@ hr {
 }
 
 #main-background {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
+    position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     z-index: -1;
     opacity: 0.5;
+    margin: auto;
 }
 
 .navbar {
@@ -248,6 +249,10 @@ hr {
     overflow: hidden;
 }
 
+#main {
+    padding: 50px 0;
+}
+
 #main .container {
     display: flex;
     justify-content: center;
@@ -259,9 +264,23 @@ hr {
     justify-content: space-evenly;
 }
 
+#introduction {
+    position: absolute;
+    top: auto;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 #descriptions .container .row .col-md-12.col-lg-4,
 #cenovnik .container .row .col-md-12.col-lg-6 {
     padding: 15px;
+}
+
+#cenovnik th {
+    width: 50%;
 }
 
 .content-descript {
@@ -355,7 +374,7 @@ footer ul li i img {
     max-width: 150px;
 }
 
-#descriptions .card-body img {
+#descriptions .description img {
     position: absolute;
     top: 0;
     left: 0;
@@ -367,7 +386,7 @@ footer ul li i img {
     transition: opacity .3s ease, transform 5s ease;
 }
 
-#descriptions .card-body:hover img {
+#descriptions .description:hover img {
     opacity: 0.3;
     transform: scale(1.1);
 }
@@ -475,6 +494,11 @@ a:hover .wrapper:after {
 /* ===============================
     KICMA I MOBILIZACIJA
 ============================== */
+
+#tretman1,
+#tretman2 {
+    padding: 50px 0;
+}
 
 #tretman1>.container>.card.content-descript,
 #tretman2>.container>.card.content-descript,
@@ -898,28 +922,34 @@ CENOVNIK
     body {
         padding-bottom: 285px;
     }
+    #main-background {
+        display: none;
+    }
     nav .container,
     footer .container {
         max-width: 100%;
     }
+    #introduction {
+        position: relative;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
     #descriptions,
     #cenovnik,
     #kontakt,
-    #tretman1,
-    #tretman2,
-    #tretmani {
-        padding-bottom: 15px;
+    #tretman1 {
+        padding-bottom: 50px;
     }
-    #tretman1,
+    #tretman1 {
+        padding-top: 65px;
+    }
     #tretman2 {
         padding-top: 50px;
     }
-    #tretman1 {
-        padding-top: 15px;
-    }
     #descriptions,
-    #cenovnik,
-    #tretmani {
+    #cenovnik {
         padding-top: 50px;
     }
     #lim-dren,
@@ -950,7 +980,7 @@ CENOVNIK
         width: 0;
         height: 0;
         border-top: 140px solid #189ad3;
-        border-right: 260px solid transparent;
+        border-right: 275px solid transparent;
         border-left: none;
         z-index: -1;
     }
@@ -1063,11 +1093,16 @@ CENOVNIK
     #lim-dren>.container>.card.content-descript {
         background: transparent;
     }
+    #descriptions>.container.descriptions>.card>.card-body,
+    #main>.container>.card.content-descript>.card-body,
     #tretman1>.container>.card.content-descript>.card-body,
     #tretman2>.container>.card.content-descript>.card-body,
     #lim-dren>.container>.card.content-descript>.card-body {
         background: rgba(255, 255, 255, 0.5);
         padding: 5px;
+    }
+    #descriptions .container .row .col-md-12.col-lg-4:last-of-type {
+        padding-bottom: 0;
     }
     footer .container {
         border-top: 3px solid #189ad3;

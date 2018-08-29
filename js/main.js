@@ -8,8 +8,3 @@ $('[data-target="messenger"]').on("click", function() {
     !1
 });
 
-$(document).ready(function(){
-    if ( window.innerHeight < 768 ) {
-        $('#main-background').css({ height: window.innerHeight });
-    }
-});

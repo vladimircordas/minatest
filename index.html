@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+    <script src="js/vendor/owl.carousel.js"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/inView.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -41,7 +43,7 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <img id="main-background" src="./img/massage-main.jpg" alt="" />
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./img/physio_logo.jpg"></a>
@@ -80,16 +82,36 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <section id="main">
+        <img id="main-background" src="./img/massage-main.jpg" alt="" />
         <div class="container">
 
             <div class="card content-descript">
                 <div class="card-body">
-                    <h1 class="card-title">Dobrodošli na sajt Io Physio. Ovde možete da pronađete koje sve tretmane i usluge pružamo.</h1>
-                    <p class="card-text">Na našem sajtu možete se informisati o limfnoj drenaži, kojim metodama otklanjamo bolove i čemu je namenjena kineziterapija.</p>
-                    <p class="card-text">Cilj nam je da zajedno sa Vama osmislimo plan koji će Vam omogućiti da na efikasan način svoj problem rešite u najkraćem roku i vratite se ugodnom funkcionisanju u svojim svakodnevnim aktivnostima.</p>
-                    <p class="card-text" style="text-align: right;">Mi smo tu da Vas podržimo!</p>
-                </div>
+                    <div class="card">
+                        <div class="card" id="introduction">
+                            <div class="card-body">
+                                <h1 class="card-title">Dobrodošli na sajt Io Physio. Ovde možete da pronađete koje sve tretmane i usluge pružamo.</h1>
+                                <p class="card-text">Na našem sajtu možete se informisati o limfnoj drenaži, kojim metodama otklanjamo bolove i čemu je namenjena kineziterapija.</p>
+                                <p class="card-text">Cilj nam je da zajedno sa Vama osmislimo plan koji će Vam omogućiti da na efikasan način svoj problem rešite u najkraćem roku i vratite se ugodnom funkcionisanju u svojim svakodnevnim aktivnostima.</p>
+                                <p class="card-text" style="text-align: right;">Mi smo tu da Vas podržimo!</p>
+                            </div>
+                        </div>
+                        <div class="owl-carousel owl-theme">
 
+                            <img src="./img/main/main_carousel_kiz_1.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_kiz_2.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_kiz_3.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_kiz_4.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_kiz_5.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_ld_0.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_ld_1.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_ld_2.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_ld_3.jpg" class="card-img-top" />
+                            <img src="./img/main/main_carousel_ld_4.jpg" class="card-img-top" />
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -97,45 +119,49 @@
     <section id="descriptions">
 
         <div class="container descriptions">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 style="color: #189ad3">Tretmani koje nudimo:</h3>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 style="color: #189ad3">Tretmani koje nudimo:</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-12 col-lg-4">
-                    <div class="card content-descript">
-                        <div class="card-body">
-                            <img src="./img/spine-massage.jpg" />
-                            <h5 class="card-title">Bezbolne manuelne mobilizacije:</h5>
-                            <p class="card-text">Manuelne mobilizacije se mogu koristiti za tretmane raznih stanja i povreda, uključujući bol u vratu, bol u leđima, kao i povrede gornjih i donjih ekstremiteta.</p>
-                            <a href="tretmanikicmeimobilizacija.html" class="btn btn-raised btn-primary">Detaljnije...</a>
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="card content-descript">
+                                <div class="card-body description">
+                                    <img src="./img/spine-massage.jpg" />
+                                    <h5 class="card-title">Bezbolne manuelne mobilizacije:</h5>
+                                    <p class="card-text">Manuelne mobilizacije se mogu koristiti za tretmane raznih stanja i povreda, uključujući bol u vratu, bol u leđima, kao i povrede gornjih i donjih ekstremiteta.</p>
+                                    <a href="tretmanikicmeimobilizacija.html" class="btn btn-raised btn-primary">Detaljnije...</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-4">
-                    <div class="card content-descript">
-                        <div class="card-body">
-                            <img src="./img/ankle-massage.jpg" />
-                            <h5 class="card-title">Kineziterapija, tj. terapeutske vežbe:</h5>
-                            <p class="card-text">Kineziterapija podrazumeva terapiju pokretom, odnosno vežbama. Ovo je terapijska metoda kojom se ciljano aktiviraju mišići koji su usled određenog stanja, povrede, neaktivnosti ili nepravilnog držanja vremenom oslabili.</p>
-                            <a href="tretmanikicmeimobilizacija.html#tretman2" class="btn btn-raised btn-primary">Detaljnije...</a>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="card content-descript description">
+                                <div class="card-body">
+                                    <img src="./img/ankle-massage.jpg" />
+                                    <h5 class="card-title">Kineziterapija, tj. terapeutske vežbe:</h5>
+                                    <p class="card-text">Kineziterapija podrazumeva terapiju pokretom, odnosno vežbama. Ovo je terapijska metoda kojom se ciljano aktiviraju mišići koji su usled određenog stanja, povrede, neaktivnosti ili nepravilnog držanja vremenom oslabili.</p>
+                                    <a href="tretmanikicmeimobilizacija.html#tretman2" class="btn btn-raised btn-primary">Detaljnije...</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-md-12 col-lg-4">
-                    <div class="card content-descript">
-                        <div class="card-body">
-                            <img src="./img/corrective.jpg" />
-                            <h5 class="card-title">Manuelna limfna drenaža:</h5>
-                            <p class="card-text">Manuelna limfna drenaža predstavlja specifičnu vrstu masaže, periodično i lagano potiskivanje tkiva kojim se stimuliše kretanje limfe u cilju smanjivanja i sprečavanja limfnog zastoja.</p>
-                            <a href="limfnadrenaza.html" class="btn btn-raised btn-primary">Detaljnije...</a>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="card content-descript description">
+                                <div class="card-body">
+                                    <img src="./img/corrective.jpg" />
+                                    <h5 class="card-title">Manuelna limfna drenaža:</h5>
+                                    <p class="card-text">Manuelna limfna drenaža predstavlja specifičnu vrstu masaže, periodično i lagano potiskivanje tkiva kojim se stimuliše kretanje limfe u cilju smanjivanja i sprečavanja limfnog zastoja.</p>
+                                    <a href="limfnadrenaza.html" class="btn btn-raised btn-primary">Detaljnije...</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,6 +257,23 @@
     <script>
         $(document).ready(function() {
             $('body').bootstrapMaterialDesign();
+            $('.owl-carousel').owlCarousel({
+                center: true,
+                items: 1,
+                loop: true,
+                margin: 0,
+                autoWidth: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                dots: true,
+                responsive: {
+                    300: {
+                        items: 1
+                    },
+
+                }
+            });
         });
     </script>
 
