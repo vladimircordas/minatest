@@ -25,6 +25,7 @@ a:hover {
 
 hr {
     margin: 0;
+    background-color: #189ad3;
 }
 
 .btn {
@@ -114,7 +115,10 @@ hr {
 
 #main-background {
     position: absolute;
-    width: 100%;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -237,6 +241,10 @@ hr {
     color: white!important;
 }
 
+.margin-bot-15 {
+    margin-bottom: 15px;
+}
+
 #main,
 #descriptions {
     width: 100%;
@@ -247,6 +255,21 @@ hr {
     justify-content: center;
     align-content: center;
     overflow: hidden;
+}
+
+#descriptions {
+    min-height: auto;
+    padding: 50px 0;
+}
+
+#kontakt>.container>.card>.card-body,
+#cenovnik>.container>.card>.card-body,
+#descriptions>.container.descriptions>.card>.card-body,
+#main>.container>.card.content-descript>.card-body,
+#tretman1>.container>.card.content-descript>.card-body,
+#tretman2>.container>.card.content-descript>.card-body,
+#lim-dren>.container>.card.content-descript>.card-body {
+    background: rgba(24, 154, 211, 0.1);
 }
 
 #main {
@@ -298,6 +321,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+    border-top: 3px solid #189ad3;
 }
 
 footer .sitemap {
@@ -319,7 +343,6 @@ footer .sitemap ul li {
     margin: 0 0 0 10px;
     position: relative;
     padding: 3px;
-    border: 1px solid #189ad3;
 }
 
 footer .sitemap ul li:first-child {
@@ -509,7 +532,7 @@ a:hover .wrapper:after {
 #tretman1>.container>.card.content-descript>.card-body,
 #tretman2>.container>.card.content-descript>.card-body,
 #lim-dren>.container>.card.content-descript>.card-body {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(37, 148, 212, 0.1);
 }
 
 .descript-type {
@@ -713,6 +736,7 @@ KONTAKT
 
 #kontakt {
     min-height: calc(100vh - 152px);
+    padding: 50px 0;
 }
 
 textarea {
@@ -849,6 +873,7 @@ CENOVNIK
 
 #cenovnik {
     min-height: calc(100vh - 152px);
+    padding: 50px 0;
 }
 
 #cenovnik .container .row {
@@ -859,6 +884,18 @@ CENOVNIK
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+}
+
+#cenovnik>.container>.card>.card-body>.card {
+    margin: 15px 0;
+}
+
+#cenovnik>.container>.card>.card-body>.card:first-child {
+    margin-top: 0;
+}
+
+#cenovnik>.container>.card>.card-body>.card:last-child {
+    margin-bottom: 0;
 }
 
 .owl-theme .owl-dots,
@@ -945,12 +982,13 @@ CENOVNIK
     #tretman1 {
         padding-top: 65px;
     }
-    #tretman2 {
+    #tretman2,
+    #descriptions {
         padding-top: 50px;
     }
-    #descriptions,
+    #main,
     #cenovnik {
-        padding-top: 50px;
+        padding-top: 65px;
     }
     #lim-dren,
     #kontakt {
@@ -970,6 +1008,7 @@ CENOVNIK
     .navbar .navbar-brand {
         margin: -15px;
         position: relative;
+        pointer-events: none;
     }
     .navbar .navbar-brand:before {
         content: "";
@@ -1091,18 +1130,37 @@ CENOVNIK
     #tretman1>.container>.card.content-descript,
     #tretman2>.container>.card.content-descript,
     #lim-dren>.container>.card.content-descript {
-        background: transparent;
+        background: rgba(24, 154, 211, 0.1);
     }
+    #kontakt>.container>.card>.card-body,
+    #cenovnik>.container>.card>.card-body,
     #descriptions>.container.descriptions>.card>.card-body,
     #main>.container>.card.content-descript>.card-body,
     #tretman1>.container>.card.content-descript>.card-body,
     #tretman2>.container>.card.content-descript>.card-body,
     #lim-dren>.container>.card.content-descript>.card-body {
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(24, 154, 211, 0.1);
         padding: 5px;
     }
     #descriptions .container .row .col-md-12.col-lg-4:last-of-type {
         padding-bottom: 0;
+    }
+    footer {
+        border: none;
+        background-color: #189ad3!important;
+    }
+    footer::after {
+        content: "";
+        position: absolute;
+        top: auto;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid #f5f5f5;
+        border-left: 170px solid transparent;
+        z-index: -1;
+        bottom: 0;
     }
     footer .container {
         border-top: 3px solid #189ad3;
@@ -1116,11 +1174,15 @@ CENOVNIK
         flex-direction: column;
         float: right;
     }
+    .social-buttons button.btn-light {
+        color: #189ad3!important;
+    }
     footer #cpy {
         left: 15px;
         right: auto;
         top: auto;
         bottom: 10px;
+        color: #f5f5f5;
     }
     footer .sitemap {
         width: 80%;
@@ -1132,7 +1194,7 @@ CENOVNIK
     }
     footer .sitemap h5 {
         margin: 15px 0 0 0;
-        color: #107dac;
+        color: white;
     }
     footer .sitemap ul {
         margin: 0;
@@ -1148,7 +1210,14 @@ CENOVNIK
     footer .sitemap ul li ul {
         margin: 0 0 0 10px;
     }
-    .card-group {
+    footer .sitemap ul li a {
+        color: #f5f5f5;
+    }
+    .card-group,
+    .card-deck {
         flex-flow: column;
+    }
+    .card-deck .card {
+        margin-bottom: 15px;
     }
 }
