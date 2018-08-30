@@ -8,3 +8,6 @@ $('[data-target="messenger"]').on("click", function() {
     !1
 });
 
+$(document).ready(function(){
+    $(window).on("resize, orientationchange"), function(){ alert('window was resized!'); }
+});

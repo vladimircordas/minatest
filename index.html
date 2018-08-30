@@ -221,27 +221,50 @@
                     <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
-            <ul class="social-buttons">
+            <ul class="social-buttons desktop">
+                <li><button type="button" class="btn btn-primary bmd-btn-fab">
+                                <div class="wrapper">
+                                    <i class="material-icons fab fa-facebook-f"></i>
+                                    <i class="material-icons fab fa-facebook-f"></i>
+                                </div>
+                              </button>
+                </li>
+                <li><button type="button" class="btn btn-primary bmd-btn-fab">
+                                <div class="wrapper">
+                                    <i class="material-icons fab fa-instagram"></i>
+                                    <i class="material-icons fab fa-instagram"></i>
+                                </div>
+                              </button>
+                </li>
+                <li><button type="button" class="btn btn-primary bmd-btn-fab">
+                                  <div class="wrapper">
+                                      <i class="material-icons fab fa-twitter"></i>
+                                      <i class="material-icons fab fa-twitter"></i>
+                                  </div>
+                                </button>
+                </li>
+            </ul>
+            <ul class="social-buttons mobile">
                 <li><button type="button" class="btn btn-light bmd-btn-fab">
-                        <div class="wrapper">
-                            <i class="material-icons fab fa-facebook-f"></i>
-                            <i class="material-icons fab fa-facebook-f"></i>
-                        </div>
-                      </button>
+                                    <div class="wrapper">
+                                        <i class="material-icons fab fa-facebook-f"></i>
+                                        <i class="material-icons fab fa-facebook-f"></i>
+                                    </div>
+                                  </button>
                 </li>
                 <li><button type="button" class="btn btn-light bmd-btn-fab">
-                        <div class="wrapper">
-                            <i class="material-icons fab fa-instagram"></i>
-                            <i class="material-icons fab fa-instagram"></i>
-                        </div>
-                      </button>
+                                    <div class="wrapper">
+                                        <i class="material-icons fab fa-instagram"></i>
+                                        <i class="material-icons fab fa-instagram"></i>
+                                    </div>
+                                  </button>
                 </li>
                 <li><button type="button" class="btn btn-light bmd-btn-fab">
-                          <div class="wrapper">
-                              <i class="material-icons fab fa-twitter"></i>
-                              <i class="material-icons fab fa-twitter"></i>
-                          </div>
-                        </button>
+                                      <div class="wrapper">
+                                          <i class="material-icons fab fa-twitter"></i>
+                                          <i class="material-icons fab fa-twitter"></i>
+                                      </div>
+                                    </button>
                 </li>
             </ul>
             <div id="cpy">&copy; Company 2018</div>
@@ -258,11 +281,11 @@
                 items: 1,
                 loop: true,
                 margin: 0,
-                animateOut: 'slideOutRight',
-                animateIn: 'slideInLeft',
+                animateOut: 'slideOutLeft',
+                animateIn: 'slideInRight',
                 autoWidth: false,
                 autoplay: true,
-                autoplayTimeout: 3000,
+                autoplayTimeout: 5000,
                 autoplayHoverPause: true,
                 dots: true,
                 responsive: {

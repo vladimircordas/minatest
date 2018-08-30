@@ -9,6 +9,14 @@ body {
     position: relative;
 }
 
+.desktop {
+    display: inline-block;
+}
+
+.mobile {
+    display: none!important;
+}
+
 a {
     color: #189ad3;
     text-decoration: none;
@@ -1219,5 +1227,11 @@ CENOVNIK
     }
     .card-deck .card {
         margin-bottom: 15px;
+    }
+    .desktop {
+        display: none!important;
+    }
+    .mobile {
+        display: flex!important;
     }
 }
