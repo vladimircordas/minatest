@@ -7,7 +7,3 @@ $('[data-target="messenger"]').on("click", function() {
     }).addClass("active"),
     !1
 });
-
-$(document).ready(function(){
-    $(window).on("resize, orientationchange"), function(){ alert('window was resized!'); }
-});
