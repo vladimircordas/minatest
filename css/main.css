@@ -826,12 +826,24 @@ textarea {
     color: #fff;
 }
 
+@keyframes animateMsgr {
+    0% {
+        border-radius: 50%;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    100% {
+        border-radius: 0;
+    }
+}
+
 #msgr-wrapper:before {
     position: absolute;
-    bottom: 30px;
+    bottom: 50vh;
     right: 30px;
     left: 720px;
-    top: 100vh;
+    top: 50vh;
     width: 56px;
     height: 56px;
     transition: all .5s;
@@ -842,28 +854,16 @@ textarea {
     content: ' ';
 }
 
-@keyframes animateMsgr {
-    0% {
-        border-radius: 50%;
-    }
-    40% {
-        border-radius: 50%;
-    }
-    100% {
-        border-radius: 0;
-    }
-}
-
 #msgr.active #msgr-wrapper:before {
     left: 0px;
     top: 0;
     right: -360px;
     width: 720px;
-    height: 200vh;
+    height: 100vh;
     /*   -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;*/
-    animation: animateMsgr .5s linear forwards;
+    animation: animateMsgr .8s linear forwards;
     background-color: #005073;
     border-left: 3px solid #189ad3;
 }
