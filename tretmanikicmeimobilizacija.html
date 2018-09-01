@@ -23,7 +23,17 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/jquery.gsap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+
+
+
+
 
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
@@ -39,7 +49,7 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body>
+<body id="#bezb_man_mob">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -81,8 +91,23 @@
             </div>
         </div>
     </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-2">
+        <div class="container justify-content-center">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item" id="section1Btn">
+
+                    <a class="nav-link">Bezbolne manuelne mobilizacije</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" id="section2Btn">Kineziterapija</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <main id="tretmani">
+
         <section class="descript-type" id="tretman1">
             <div class="container">
                 <div class="card content-descript">
@@ -98,12 +123,12 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./img/manuelne_mobilizacije_1.jpg" class="card-img-top" />
+                                <img src="./img/manuelne_mobilizacije_1.jpg " class="card-img-top " />
                             </div>
                         </div>
                         <div class="card-group">
                             <div class="card">
-                                <img src="./img/manuelne_mobilizacije_2.jpg" class="card-img-top" />
+                                <img src="./img/manuelne_mobilizacije_2.jpg " class="card-img-top " />
                             </div>
                             <div class="card">
                                 <div class="card-body">
@@ -134,11 +159,11 @@
                             <div class="card">
                                 <div class="owl-carousel owl-theme">
 
-                                    <img src="./img/manuelne_mobilizacije_3.jpg" class="card-img-top" />
+                                    <img src="./img/manuelne_mobilizacije_3.jpg " class="card-img-top " />
 
-                                    <img src="./img/manuelne_mobilizacije_4.jpg" class="card-img-top" />
+                                    <img src="./img/manuelne_mobilizacije_4.jpg " class="card-img-top " />
 
-                                    <img src="./img/manuelne_mobilizacije_5.jpg" class="card-img-top" />
+                                    <img src="./img/manuelne_mobilizacije_5.jpg " class="card-img-top " />
 
                                 </div>
                             </div>
@@ -148,7 +173,7 @@
             </div>
         </section>
         <hr>
-        <section class="descript-type" id="tretman2">
+        <section class="descript-type " id="tretman2">
             <div class="container">
                 <div class="card content-descript">
                     <div class="card-body">
@@ -163,12 +188,12 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./img/vezbe_1.jpg" class="card-img-top" />
+                                <img src="./img/vezbe_1.jpg " class="card-img-top " />
                             </div>
                         </div>
                         <div class="card-group">
                             <div class="card">
-                                <img src="./img/vezbe_2.jpg" class="card-img-top" />
+                                <img src="./img/vezbe_2.jpg " class="card-img-top " />
                             </div>
                             <div class="card">
                                 <div class="card-body">
@@ -194,12 +219,12 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./img/vezbe_3.jpg" class="card-img-top" />
+                                <img src="./img/vezbe_3.jpg " class="card-img-top " />
                             </div>
                         </div>
                         <div class="card-group">
                             <div class="card">
-                                <img src="./img/vezbe_4.jpg" class="card-img-top" />
+                                <img src="./img/vezbe_4.jpg " class="card-img-top " />
                             </div>
                             <div class="card">
                                 <div class="card-body">
@@ -267,7 +292,7 @@
     </main>
     <div class="contact-us">
 
-        <a class="nav-link btn bmd-btn-fab btn-primary" id="messages" data-target="messenger">
+        <a class="nav-link btn bmd-btn-fab btn-primary " id="messages " data-target="messenger">
             <div class="wrapper"><i class="fa fa-comment"></i><i class="fa fa-comment"></i></div>
         </a>
 
@@ -275,25 +300,25 @@
     <div id="msgr">
         <div id="msgr-wrapper">
             <div class="msgr-content">
-                <a href="#" class="nav-link btn bmd-btn-fab bmd-btn-fab-sm btn-white messenger-close icon icon-hover icon-xs icon-circle icon-white" data-target="messenger"><i class="fa fa-times"></i></a>
+                <a href="# " class="nav-link btn bmd-btn-fab bmd-btn-fab-sm btn-white messenger-close icon icon-hover icon-xs icon-circle icon-white " data-target="messenger"><i class="fa fa-times"></i></a>
                 <h3 class="card-title">Kontaktirajte nas putem kontakt forme:</h3>
                 <div class="card content-descript">
                     <div class="card-body">
                         <form>
                             <div class="form-group">
-                                <label for="name" class="bmd-label-floating">Ime i prezime</label>
-                                <input type="name" class="form-control" id="name">
+                                <label for="name " class="bmd-label-floating">Ime i prezime</label>
+                                <input type="name " class="form-control " id="name">
                             </div>
                             <div class="form-group">
-                                <label for="email" class="bmd-label-floating">Email</label>
-                                <input type="email" class="form-control" id="email">
+                                <label for="email " class="bmd-label-floating">Email</label>
+                                <input type="email " class="form-control " id="email">
                             </div>
                             <div class="form-group">
-                                <label for="poruka" class="bmd-label-floating">Tekst poruke...</label>
-                                <textarea type="poruka" class="form-control" id="poruka"></textarea>
+                                <label for="poruka " class="bmd-label-floating">Tekst poruke...</label>
+                                <textarea type="poruka " class="form-control " id="poruka"></textarea>
                             </div>
                             <div class="form-group bmd-form-group">
-                                <button type="submit" class="btn btn-raised btn-primary">Posalji</button>
+                                <button type="submit " class="btn btn-raised btn-primary">Posalji</button>
                             </div>
                         </form>
                     </div>
@@ -322,21 +347,21 @@
                 </ul>
             </div>
             <ul class="social-buttons desktop">
-                <li><button type="button" class="btn btn-primary bmd-btn-fab">
+                <li><button type="button " class="btn btn-primary bmd-btn-fab">
                             <div class="wrapper">
                                 <i class="material-icons fab fa-facebook-f"></i>
                                 <i class="material-icons fab fa-facebook-f"></i>
                             </div>
                           </button>
                 </li>
-                <li><button type="button" class="btn btn-primary bmd-btn-fab">
+                <li><button type="button " class="btn btn-primary bmd-btn-fab">
                             <div class="wrapper">
                                 <i class="material-icons fab fa-instagram"></i>
                                 <i class="material-icons fab fa-instagram"></i>
                             </div>
                           </button>
                 </li>
-                <li><button type="button" class="btn btn-primary bmd-btn-fab">
+                <li><button type="button " class="btn btn-primary bmd-btn-fab">
                               <div class="wrapper">
                                   <i class="material-icons fab fa-twitter"></i>
                                   <i class="material-icons fab fa-twitter"></i>
@@ -345,21 +370,21 @@
                 </li>
             </ul>
             <ul class="social-buttons mobile">
-                <li><button type="button" class="btn btn-light bmd-btn-fab">
+                <li><button type="button " class="btn btn-light bmd-btn-fab">
                                 <div class="wrapper">
                                     <i class="material-icons fab fa-facebook-f"></i>
                                     <i class="material-icons fab fa-facebook-f"></i>
                                 </div>
                               </button>
                 </li>
-                <li><button type="button" class="btn btn-light bmd-btn-fab">
+                <li><button type="button " class="btn btn-light bmd-btn-fab">
                                 <div class="wrapper">
                                     <i class="material-icons fab fa-instagram"></i>
                                     <i class="material-icons fab fa-instagram"></i>
                                 </div>
                               </button>
                 </li>
-                <li><button type="button" class="btn btn-light bmd-btn-fab">
+                <li><button type="button " class="btn btn-light bmd-btn-fab">
                                   <div class="wrapper">
                                       <i class="material-icons fab fa-twitter"></i>
                                       <i class="material-icons fab fa-twitter"></i>
@@ -371,8 +396,8 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js " integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U " crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js " integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9 " crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
             $('body').bootstrapMaterialDesign();
@@ -395,7 +420,7 @@
             });
         });
     </script>
-
+    <script src="js/tretmani.js"></script>
     <script src="js/main.js"></script>
 
 </body>

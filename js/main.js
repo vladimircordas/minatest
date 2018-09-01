@@ -2,7 +2,7 @@ $('[data-target="messenger"]').on("click", function() {
     var e = $("#msgr")
         , t = $("#msgr-wrapper");
     return e.hasClass("active") ? (t.find(".msgr-content").fadeOut(),
-    e.fadeOut(100).removeClass("active")) : e.fadeIn(300, function() {
+    e.fadeOut(200).removeClass("active")) : e.fadeIn(400, function() {
         t.find(".msgr-content").fadeIn(400)
     }).addClass("active"),
     !1
